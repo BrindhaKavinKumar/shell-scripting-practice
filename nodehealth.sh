@@ -26,4 +26,4 @@ df -h /
 echo
 
 
-echo "Node health check completed ✔"
+echo "Node health check completed"
