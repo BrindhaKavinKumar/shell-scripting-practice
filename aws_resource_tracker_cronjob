@@ -22,4 +22,12 @@ aws lambda list-functions
 echo "list iam-users"
 aws lambda list-functions
 
+#cronjob-
+path(mandatory)
+crontab -e(select nano)
+*/5 * * * * /home/ubuntu/aws_resource_tracker >> /home/ubuntu/aws_resource.log 2>&1(runs every 5 min)
+#log 2>&1 -> copy error also to the file 
+ctrl + o -> save and ctrl + x -> exit
+crontab -l (to verify if it exists)
+tail /home/ubuntu/aws_resource.log
 
