@@ -1,0 +1,38 @@
+#!/bin/bash
+i- insert. esc. :wq!
+man
+touch
+cat
+pwd
+cd
+vim/vi
+echo
+rm
+cp
+nproc
+free
+top
+df
+set -x (debug mode), set -e (exit when error), set -o pipefail
+grep 
+awk - awk -F " " '{print $2}'
+ps -ef (process entire format)
+curl - retrieves information from internet 
+curl url | grep error
+| Option    | Meaning                      |
+| --------- | ---------------------------- |
+| `-I`      | Headers only                 |
+| `-O`      | Save file (original name)    |
+| `-o file` | Save as specific file        |
+| `-X`      | HTTP method (GET, POST, PUT) |
+| `-H`      | Add header                   |
+| `-d`      | Send data                    |
+| `-v`      | Verbose (debug)              |
+/var/log/syslog - logfile
+
+wget -> download file -> then use grep command on that file
+#Use curl to communicate to API and server. Use wget to download
+
+find- find files - file / -name filename
+
+sudo su - - takes you to root user
