@@ -36,3 +36,8 @@ wget -> download file -> then use grep command on that file
 find- find files - file / -name filename
 
 sudo su - - takes you to root user
+kill -9 processname or processid
+
+trap- catch signals or events(If something happens, do this before exiting)
+trap 'commands' SIGNAL
+
