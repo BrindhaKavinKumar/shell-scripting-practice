@@ -1,0 +1,25 @@
+#!/bin/bash
+
+#############################
+#AUTHOR: Brindha
+#DATE: 15/01/2026
+#VERSION: V1
+#AWS resource tracker
+#############################
+
+PATH=/usr/local/bin:/usr/bin:/bin
+
+set -x
+echo "list s3 buckets"
+aws s3 ls
+
+echo "list EC2 instances"
+aws ec2 describe-instances | jq '.Reservations[].Instances[].InstanceId'
+
+echo "list lambda"
+aws lambda list-functions
+
+echo "list iam-users"
+aws lambda list-functions
+
+
